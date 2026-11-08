@@ -1,0 +1,20 @@
+[project]
+name = "quant-swarm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "yy", email = "isbn9787type1a@qq.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.5.4",
+    "polars>=2.1.0",
+]
+
+[project.scripts]
+quant-swarm = "quant_swarm:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
